@@ -1,0 +1,8 @@
+html {
+  color: black;
+}
+
+#greeting {
+  visibility: hidden;
+  color: blue;
+}

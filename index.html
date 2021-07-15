@@ -3,12 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>document</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
         <button id="button">열기</button>
         <div id="greeting">Hello world!</div>
     </body>
     <script>
-        document.getElementById("button").addEventListener
+        const button = document.getElementById("button")
+        const greeting = document.getElementById("greeting")
+        button.addEventListener('click', function(event){
+            if(button.innerHTML === "열기"){
+                alert("HeLLoOoOoOo");
+                greeting.style.visibility = "visible";
+                button.innerHTML = "닫기"
+            }
+            else{
+                alert("ByYyYye");
+                greeting.style.visibility = "hidden";
+                button.innerHTML = "열기"
+            }
+                
+        });
+        
+
+    
+
     </script>
 </html>
